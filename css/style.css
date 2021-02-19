@@ -1,0 +1,107 @@
+/* Google font import for Spartan font family */
+@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+
+/* Color variables */
+:root{
+  --brown-beaver: #9E7F66;
+  --black-dark: #111111;
+  --black-medium: #17192B;
+  --gray-dark: #242B37;
+  --gray-light: #5C6779;
+  --white: #FFFFFF;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Spartan', sans-serif;
+  overflow: hidden;
+  overflow-y: scroll;
+  max-width: 100%;
+}
+
+/* Header 1 styling */
+h1{
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 4.5rem;
+}
+
+/* Header 2 styling */
+h2{
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 3.5rem;
+}
+
+/* Header 3 styling */
+h3{
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+}
+
+/* The smaller version of header 3 */
+.small-heading{
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.75rem;
+  letter-spacing: 0.125rem;
+}
+
+/* Regular sized paragraph elements */
+.normal-p{
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+}
+
+/* Smaller sized paragraph elements */
+.small-p{
+  font-size: 0.94rem;
+  line-height: 1.75rem;
+}
+
+
+/* Links */
+a{
+  text-decoration: none;
+}
+
+/* List Items */
+li{
+  list-style: none;
+}
+
+/* Link styling - creates a button with white text and a white border */
+.light-text-button{
+  background-color: transparent;
+  color: var(--white);
+  border: solid var(--white) thin;
+  padding: 1.5rem 3.5rem;
+}
+
+/* Link styling - on hover styling for light text button */
+.light-text-button:hover{
+  background-color: var(--white);
+  color: var(--black-dark);
+  border: solid var(--black-dark) thin;
+}
+
+/* Link styling - creates a button with dark text and a dark border */
+.dark-text-button{
+  background-color: transparent;
+  color: var(--black-dark);
+  border: solid var(--black-dark) thin;
+  padding: 1.5rem 3.5rem;
+}
+
+/* Link styling - on hover styling for dark text button */
+.dark-text-button:hover{
+  background-color: var(--black-dark);
+  color: var(--white);
+  border: solid var(--white) thin;
+}
