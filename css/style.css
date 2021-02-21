@@ -4,6 +4,7 @@
 /* Color variables */
 :root{
   --brown-beaver: #9E7F66;
+  --black-darkest: #000000;
   --black-dark: #111111;
   --black-medium: #17192B;
   --gray-dark: #242B37;
@@ -26,9 +27,9 @@ body{
 
 /* Header 1 styling */
 h1{
-  font-size: 4rem;
-  font-weight: 300;
-  line-height: 4.5rem;
+  font-size: 3.25rem;
+  font-weight: 100;
+  line-height: 3.75rem;
 }
 
 /* Header 2 styling */
@@ -55,8 +56,8 @@ h3{
 
 /* Regular sized paragraph elements */
 .normal-p{
-  font-size: 1.125rem;
-  line-height: 1.875rem;
+  font-size: 1.025rem;
+  line-height: 1.775rem;
 }
 
 /* Smaller sized paragraph elements */
@@ -81,7 +82,7 @@ li{
   background-color: transparent;
   color: var(--white);
   border: solid var(--white) thin;
-  padding: 1.5rem 3.5rem;
+  padding: 1rem 3.5rem;
 }
 
 /* Link styling - on hover styling for light text button */
@@ -105,3 +106,116 @@ li{
   color: var(--white);
   border: solid var(--white) thin;
 }
+
+/* Hero */
+.hero{
+  background: url('/images/homepage/hero-bg-desktop.jpg') no-repeat right center;
+  background-size: cover;
+  height: 110vh;
+  position: relative;
+}
+
+.hero::after{
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 36%;
+  background-color: var(--black-darkest);
+  z-index: 1;
+  position: absolute;
+ 
+  
+}
+
+.hero-logo-container{
+  margin-bottom: 7.5rem;
+}
+
+/* Black background behind hero text */
+.hero-text-container{
+  /*padding: 2rem 0 0 10.3rem;*/
+  width: 100%;
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  left: 10.3rem;
+  z-index: 2;
+}
+
+
+/* Header 1 in the hero */
+.hero-header{
+  color: var(--white);
+  margin-bottom: 1.5rem;
+  width: 40%;
+}
+
+/* Paragraph elememt in the hero */
+.hero-p{
+  color: var(--white);
+  width: 30%;
+}
+
+.hero-button-container{
+  margin-top: 3rem;
+}
+
+/* Features container for the background, image, and text */
+.features-background{
+  background-color: var(--white);
+  width: 100%;
+}
+
+/* Gray pattern behind the features section. Each features section will be positioned absolute to this */
+.features-background-pattern-container{
+  position: relative;
+}
+
+/* Gray pattern container enjoyable places section */
+.curve-top-right-pattern-container{
+  margin-top: 12rem;
+  height: 45vh;
+  width: 65%;
+}
+
+.curve-top-right-pattern{
+  height: 100%;
+  width: 100%;
+}
+
+/* Features container holding an image and text - positioned absolute on features-background-pattern-container */
+.features-container{
+  display: flex;
+  width: 100%;
+  padding-left: 10.5rem;
+  position: absolute;
+  top: 0;
+}
+
+/* Holds the image on the left side of the enjoyable places section */
+.features-enjoyable-image-container-left{
+  background: url('/images/homepage/enjoyable-place-desktop.jpg') no-repeat center center/cover;
+  height: 95vh;
+  width: 170%;
+  position: relative;
+  bottom: 17rem;
+  z-index: 2;
+}
+
+.features-text-container{
+  width: 100%;
+}
+
+.features-text-container-right-side{
+  position: relative;
+  left: 12rem;
+  bottom: 5rem;
+}
+
+
+
+
+
+
