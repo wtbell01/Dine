@@ -8,7 +8,9 @@
   --black-dark: #111111;
   --black-medium: #17192B;
   --gray-dark: #242B37;
+  --gray-medium: #4C4C4C;
   --gray-light: #5C6779;
+  --gray-lightest: #cbcbcb;
   --white: #FFFFFF;
 }
 
@@ -162,60 +164,294 @@ li{
   margin-top: 3rem;
 }
 
-/* Features container for the background, image, and text */
-.features-background{
-  background-color: var(--white);
-  width: 100%;
-}
-
-/* Gray pattern behind the features section. Each features section will be positioned absolute to this */
-.features-background-pattern-container{
-  position: relative;
-}
-
-/* Gray pattern container enjoyable places section */
+/* Container for the features section - sets properties for the gray image on the left side of the section  */
 .curve-top-right-pattern-container{
+  background-color: var(--white);
+  height: 46vh;
+  width: 100%;
+  position: relative;
   margin-top: 12rem;
-  height: 45vh;
-  width: 65%;
 }
 
+/* Gray pattern image with a curve at the top right - starts on the left side of the features section */
 .curve-top-right-pattern{
+  height: 100%;
+  width: 62.5%;
+}
+
+/* Flex container for the feature image and feature text */
+.features-image-text-container{
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Features image container */
+.features-image-container{
+  position: relative;
+  bottom: 16.5rem;
+  height: 100%;
+  width: 45%; 
+  z-index: 2;
+}
+
+/* Features image */
+.features-image{
   height: 100%;
   width: 100%;
 }
 
-/* Features container holding an image and text - positioned absolute on features-background-pattern-container */
-.features-container{
-  display: flex;
-  width: 100%;
-  padding-left: 10.5rem;
-  position: absolute;
-  top: 0;
+/* Features text container that holds an icon, header, and paragraph element */
+.features-text-container{
+  position: relative;
+  bottom: 5rem;
+  width: 40%;
 }
 
-/* Holds the image on the left side of the enjoyable places section */
-.features-enjoyable-image-container-left{
-  background: url('/images/homepage/enjoyable-place-desktop.jpg') no-repeat center center/cover;
-  height: 95vh;
-  width: 170%;
+/* Features icon container */
+.features-text-icon-container{
+  margin-bottom: 2.25rem;
+}
+
+/* Features header container */
+.features-text-header-container{
+  margin-bottom: 1rem;
+}
+
+/* Container for the features section - sets properties for the gray image on the left side of the section  */
+.curve-top-left-pattern-container{
+  background-color: var(--white);
+  height: 46vh;
+  width: 100%;
   position: relative;
-  bottom: 17rem;
+  margin-top: 32.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Gray pattern image with a curve at the top right - starts on the left side of the features section */
+.curve-top-left-pattern{
+  height: 100%;
+  width: 62.5%;
+}
+
+
+/* Menu background */
+.menu-background-black{
+  background-color: var(--black-dark);
+  color: var(--white);
+  padding: 12rem 0 7.5rem 0;
+}
+
+/* Flex container placing menu highlights on the left and menu items on the right */
+.menu-container{
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  margin: 0 auto;
+}
+
+/*Menu highlights container on the left side */
+.menu-highlights-container{
+  display: flex;
+  flex-direction: column;
+  width: 42.5%;
+}
+
+/* Divider icon container above the highlights header */
+.menu-highlights-divider-icon-container{
+  height: 2%;
+  width: 12%;
+  color: var(--white);
+  margin-bottom: 3rem;
+}
+
+/* Divider icon */
+.menu-highlights-divider-icon{
+  height: 100%;
+  width: 100%;
+}
+
+/* Header container for the highlights */
+.menu-highlights-header-container{
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+/* Menu items container on the right side */
+.menu-items-container{
+  display: flex;
+  flex-direction: column;
+  width: 46%;
+  margin-top: 3.75rem;
+}
+
+/* Individual menu item row - places image on the left and text on the right */
+.menu-item-row{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Removes margin bottom for the last menu item row */
+.menu-item-row:last-child{
+  margin-bottom: 0;
+}
+
+/* Creates the border line at the bottom of each menu item row */
+.menu-item-row::after{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: solid var(--white) thin;
+  opacity: 0.15;
+}
+
+/* Removes the border line on the last menu item row */
+.menu-item-row:last-child::after{
+  display: none;
+}
+
+
+
+.menu-item-image-container{
+  height: 100%;
+  width: 48.5%;
+  margin-right: 2.5rem;
+ 
+}
+
+.menu-item-image{
+  height: 100%;
+  width: 100%;
+  
+}
+
+.menu-item-description-container{
+  
+}
+
+.menu-item-description{
+  font-size: .75rem;
+}
+
+/* Container for the booking section - sets properties for the gray image on the left side of the section  */
+.curve-bottom-right-pattern-container{
+  height: 46vh;
+  width: 100%;
+  position: relative;
+}
+
+/* Gray pattern image with a curve at the bottom right - starts on the left side of the booking section */
+.curve-bottom-right-pattern{
+  height: 100%;
+  width: 36%;
+}
+
+/* Flex container for the feature image and feature text */
+.booking-image-text-container{
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Booking image container on the left side of the booking section */
+.booking-image-container{
+  position: relative;
+  top: 5rem;
+  height: 100%;
+  width: 45%; 
   z-index: 2;
 }
 
-.features-text-container{
+/* Booking image */
+.booking-image{
+  height: 100%;
   width: 100%;
 }
 
-.features-text-container-right-side{
+/* Booking text container on the right side of the booking section */
+.booking-text-container{
   position: relative;
-  left: 12rem;
-  bottom: 5rem;
+  top: 7rem;
+  width: 40%;
+}
+
+/* Booking header container for text on the right side of the booking section */
+.booking-header-container{
+  margin-bottom: 1rem;
+}
+
+/* Booking description text container for text below the booking header */
+.booking-description-text-container{
+  margin-bottom: 3rem;
+}
+
+/* Booking button container */
+.booking-button-container{
+ margin-bottom: 4.8rem;
+}
+
+/* Booking button */
+.booking-button{
+ background-color: var(--black-dark);
+ text-transform: uppercase;
+ font-size: 0.8rem;
+ letter-spacing: 0.125rem;
+}
+
+/* Booking list items for booking occasions below booking button */
+.booking-occasion-li{
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.booking-occasion-link{
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: var(--gray-lightest);
+}
+
+.booking-default{
+  color: var(--gray-medium);
+}
+
+.booking-occasion-link:focus{
+  color: var(--gray-medium);
 }
 
 
+.booking-family-link:focus .booking-special-link,
+.booking-family-link:focus .booking-social-link{
+  color: var(--gray-lightest);
+}
 
+.booking-special-link:focus .booking-family-link,
+.booking-special-link:focus .booking-social-link,
+.booking-special-link:focus .booking-default{
+  color: var(--gray-lightest);
+}
 
-
+.booking-social-link:focus .booking-family-link,
+.booking-social-link:focus .booking-special-link,
+.booking-social-link:focus .booking-special-default{
+  color: var(--gray-lightest);
+}
 
