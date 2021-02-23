@@ -63,18 +63,20 @@
           <div class="form-row">
             <!-- Pick a date label on the left and dates on the right -->
             <div class="form-date-row">
+              <div class="form-label-error-container">
               <!-- Label on the left -->
               <label class="form-label">Pick a date</label>
               <!-- Error message container -->
               <p id="error-message-date" class="error-message"></p>
+              </div>
               <!-- Date inputs on the right -->
               <div class="form-date-input-container">
                 <!-- Month input -->
-                <input type="number" id="month-input" class="date-input" placeholder="MM">
+                <input type="text" id="month-input" class="date-input" placeholder="MM">
                 <!-- Day input -->
-                <input type="number" id="day-input" class="date-input" placeholder="DD">
+                <input type="text" id="day-input" class="date-input" placeholder="DD">
                 <!-- Month input -->
-                <input type="number" id="year-input" class="date-input" placeholder="YYYY">
+                <input type="text" id="year-input" class="date-input" placeholder="YYYY">
               </div>
             </div>
           </div>
@@ -82,18 +84,20 @@
           <div class="form-row">
             <!-- Pick a time label on the left and time on the right -->
             <div class="form-time-row">
+              <div class="form-label-error-container">
               <!-- Label on the left -->
               <label class="form-label">Pick a time</label>
               <!-- Error message container -->
               <p id="error-message-time" class="error-message"></p>
+              </div>
               <!-- Time inputs on the right -->
               <div class="form-time-input-container">
                 <!-- Hours input -->
-                <input type="number" id="hour-input" class="time-input" placeholder="09">
+                <input type="text" id="hour-input" class="time-input" placeholder="09">
                 <!-- Minutes input -->
-                <input type="number" id="minute-input" class="time-input" placeholder="00">
+                <input type="text" id="minute-input" class="time-input" placeholder="00">
                 <!-- AM/PM Dropdown selection -->
-                <select name="am-pm-input"  id="am-pm-input" class="time-input" placeholder="AM">
+                <select id="am-pm-input" class="am-pm-input" placeholder="AM">
                   <option value="AM">AM</option>
                   <option value="PM">PM</option>
                 </select>
@@ -110,7 +114,7 @@
               </div>
               <!-- People container-->
               <div class="people-container">
-                <p id="people-output" class="people-output"> people</p>
+                <input type="text" id="people-input" class="people-input people-output" placeholder="People">
               </div>
               <!-- Plus container-->
               <div class="plus-container">
