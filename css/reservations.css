@@ -85,11 +85,12 @@
   width: 100%;
 }
 
+/* Reservation form container */
 .reservation-form-container{
   z-index: 2;
   background-color: var(--white);
   padding: 2rem 2rem 2.5rem 2rem;
-  width: 30%;
+  width: 35%;
   position: relative;
   left: 35rem;
   bottom: 16.75rem;
@@ -130,13 +131,22 @@ input:focus{
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  
 }
 
 /* Form labels for the date and time rows */
 .form-label{
-  width: 30%;
+  width: 100%;
   font-size: 0.9rem;
   font-family: 'Spartan', sans-serif;
+  
+}
+
+/* Container for form rows with label to the left of input, want the error message below the label */
+.form-label-error-container{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
 }
 
 /* Container for the 3 inputs for date and time */
@@ -144,7 +154,7 @@ input:focus{
 .form-time-input-container{
  display: flex;
  justify-content: space-between;
- width: 70%;
+ width: 60%;
  font-family: 'Spartan', sans-serif;
   
 }
@@ -154,9 +164,22 @@ input:focus{
 .time-input{
   border: none;
   border-bottom: solid var(--black-dark) 1px;
-  padding: 0 0 1rem 0.5rem;
+  padding: 0 0 1rem 0;
   width: 25%;
   text-align: center;
+}
+
+/* Remove border from am/pm selection box */
+.am-pm-input{
+  border: none;
+  border-bottom: solid var(--black-dark) 1px;
+  padding: 0 0 1rem 0;
+  text-align: center;
+  width: 25%;
+}
+
+.am-pm-input:focus{
+  outline: none;
 }
 
 /* People row */
@@ -167,6 +190,16 @@ input:focus{
   margin: 0 auto;
   border-bottom: solid var(--black-dark) 1px;
   padding: 1rem;
+}
+
+.people-input,
+.people-input::placeholder{
+  border: none;
+  color: var(--black-dark);
+  font-family: 'Spartan', sans-serif;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-align: center;
 }
 
 .minus-container{
@@ -192,7 +225,7 @@ input:focus{
 
 .error-message{
   color: var(--error-red);
-  padding: 0.625rem 0 0 0.5rem;
-  font-size: .75rem;
+  padding: 0.625rem 0 0 0;
+  font-size: 0.625rem;
 }
 
