@@ -198,12 +198,19 @@ li{
   height: 100%;
   width: 45%; 
   z-index: 2;
+  
 }
 
 /* Features image */
 .features-image{
   height: 100%;
   width: 100%;
+  
+}
+
+/* Box shadow in certain images */
+.image-shadow{
+  box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.503);
 }
 
 /* Features text container that holds an icon, header, and paragraph element */
