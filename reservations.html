@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css"> 
+  <link rel="stylesheet" href="css/reservations.css"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title> Dine | Reservations </title>
+</head>
+<body>
+
+  <!-- Hero container-->
+  <div class="reservations-hero">
+    <!-- Hero image image -->
+    <img src="/images/booking/hero-bg-desktop.jpg" alt="Hand serving a plate" class="reservations-hero-image">
+    <!-- Hero text container for the hero content-->
+    <div class="reservations-hero-text-container">
+      <!-- Hero logo conatiner-->
+      <div class="reservations-hero-logo-container">
+        <img src="/images/logo.svg" alt="Dine logo" class="reservations-hero-logo">
+      </div>
+      <!-- Hero reservations title container -->
+      <div class="reservations-hero-title-container">
+        <h1 class="reservations-hero-title">Reservations</h1>
+      </div>
+      <!-- Hero reservations description container -->
+      <div class="reservations-hero-description-container">
+        <p class="reservations-hero-description normal-p">We can’t wait to host you. If you have any special requirements please feel free to 
+        call on the phone number below. We’ll be happy to accommodate you.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reservation Container-->
+  <div class="reservation-container">
+    <img src="/images/patterns/pattern-curve-bottom-right.svg" alt="Gray pattern" class="reservation-pattern">
+    <!-- Flex container for the brown icon on the left and form on the right-->
+    <div class="reservation-icon-form-container">
+      <!-- Brown Icon container to the left of the form-->
+      <div class="reservation-icon-container">
+        <img src="/images/patterns/pattern-lines.svg" alt="Pattern lines" class="reservation-icon">
+      </div>
+
+      <!-- Reservation Form container on the right side  -->
+      <div class="reservation-form-container">
+        <!-- Reservation Form  -->
+        <form id="reservation-form" class="reservation-form">
+          <!-- Form row containing name input-->
+          <div class="form-row">
+            <input type="text" id="name-input" class="name-input" placeholder="Name">
+            <!-- Error message container -->
+            <p id="error-message-name" class="error-message"></p>
+          </div>
+          <!-- Form row containing email input-->
+          <div class="form-row">
+            <input type="email" id="email-input" class="email-input" placeholder="Email">
+            <!-- Error message container -->
+            <p id="error-message-email" class="error-message"></p>
+          </div>
+          <!-- Form row containing date input-->
+          <div class="form-row">
+            <!-- Pick a date label on the left and dates on the right -->
+            <div class="form-date-row">
+              <!-- Label on the left -->
+              <label class="form-label">Pick a date</label>
+              <!-- Error message container -->
+              <p id="error-message-date" class="error-message"></p>
+              <!-- Date inputs on the right -->
+              <div class="form-date-input-container">
+                <!-- Month input -->
+                <input type="number" id="month-input" class="date-input" placeholder="MM">
+                <!-- Day input -->
+                <input type="number" id="day-input" class="date-input" placeholder="DD">
+                <!-- Month input -->
+                <input type="number" id="year-input" class="date-input" placeholder="YYYY">
+              </div>
+            </div>
+          </div>
+          <!-- Form row containing date input-->
+          <div class="form-row">
+            <!-- Pick a time label on the left and time on the right -->
+            <div class="form-time-row">
+              <!-- Label on the left -->
+              <label class="form-label">Pick a time</label>
+              <!-- Error message container -->
+              <p id="error-message-time" class="error-message"></p>
+              <!-- Time inputs on the right -->
+              <div class="form-time-input-container">
+                <!-- Hours input -->
+                <input type="number" id="hour-input" class="time-input" placeholder="09">
+                <!-- Minutes input -->
+                <input type="number" id="minute-input" class="time-input" placeholder="00">
+                <!-- AM/PM Dropdown selection -->
+                <select name="am-pm-input"  id="am-pm-input" class="time-input" placeholder="AM">
+                  <option value="AM">AM</option>
+                  <option value="PM">PM</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <!-- Form row containing people input-->
+          <div class="form-row">
+            <!-- Container for minus sign, number of people, and plus sign -->
+            <div class="form-people-row">
+              <!-- Minus container-->
+              <div class="minus-container">
+                <img src="/images/icons/icon-minus.svg" alt="Minus sign" id="minus" class="minus">
+              </div>
+              <!-- People container-->
+              <div class="people-container">
+                <p id="people-output" class="people-output"> people</p>
+              </div>
+              <!-- Plus container-->
+              <div class="plus-container">
+                <img src="/images/icons/icon-plus.svg" alt="Plus sign" id="plus" class="plus">
+              </div>
+            </div>
+            <!-- Error message container -->
+            <p id="error-message-people" class="error-message"></p>
+          </div>
+          <!-- Button container -->
+          <div class="form-button-container">
+            <button id="form-button" class="form-button">Make Reservation</button>
+          </div> 
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <!-- Footer flex container -->
+    <div class="footer-container">
+      <!-- Footer box (Dine logo)-->
+      <div class="footer-box">
+        <div class="footer-logo-container">
+          <img src="/images/logo.svg" alt="Dine logo" class="footer-logo">
+        </div>
+      </div>
+
+      <!-- Footer box (Location)-->
+      <div class="footer-box">
+        <ul class="footer-location-list">
+          <li class="footer-location-li">Marthwaite, Sedbergh</li>
+          <li class="footer-location-li">Cumbria</li>
+          <li class="footer-location-li">+00 44 123 4567</li>
+        </ul>
+      </div>
+
+      <!-- Footer box (Open times)-->
+      <div class="footer-box">
+        <ul class="footer-times-list">
+          <li class="footer-times-li">Open Times</li>
+          <li class="footer-times-li">Mon - Fri: 09:00 AM - 10:00 PM</li>
+          <li class="footer-times-li">Sat - Sun: 09:00 AM - 11:30 PM</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+
+<!-- Javascript file for this page -->
+<script src="javascript/reservations.js"></script>
+
+</body>
+</html>
