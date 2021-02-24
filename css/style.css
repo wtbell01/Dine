@@ -127,17 +127,14 @@ li{
   background-color: var(--black-darkest);
   z-index: 1;
   position: absolute;
- 
-  
 }
 
 .hero-logo-container{
   margin-bottom: 7.5rem;
 }
 
-/* Black background behind hero text */
+/* Text container for the icon, header, and description in the hero */
 .hero-text-container{
-  /*padding: 2rem 0 0 10.3rem;*/
   width: 100%;
   position: absolute;
   top: 2rem;
@@ -198,14 +195,12 @@ li{
   height: 100%;
   width: 45%; 
   z-index: 2;
-  
 }
 
 /* Features image */
 .features-image{
   height: 100%;
   width: 100%;
-  
 }
 
 /* Box shadow in certain images */
@@ -230,7 +225,7 @@ li{
   margin-bottom: 1rem;
 }
 
-/* Container for the features section - sets properties for the gray image on the left side of the section  */
+/* Container for the second features section - sets properties for the gray image on the left side of the section  */
 .curve-top-left-pattern-container{
   background-color: var(--white);
   height: 46vh;
@@ -330,22 +325,15 @@ li{
   display: none;
 }
 
-
-
 .menu-item-image-container{
   height: 100%;
   width: 48.5%;
   margin-right: 2.5rem;
- 
 }
 
 .menu-item-image{
   height: 100%;
   width: 100%;
-  
-}
-
-.menu-item-description-container{
   
 }
 
@@ -442,24 +430,6 @@ li{
 
 .booking-occasion-link:focus{
   color: var(--gray-medium);
-}
-
-
-.booking-family-link:focus .booking-special-link,
-.booking-family-link:focus .booking-social-link{
-  color: var(--gray-lightest);
-}
-
-.booking-special-link:focus .booking-family-link,
-.booking-special-link:focus .booking-social-link,
-.booking-special-link:focus .booking-default{
-  color: var(--gray-lightest);
-}
-
-.booking-social-link:focus .booking-family-link,
-.booking-social-link:focus .booking-special-link,
-.booking-social-link:focus .booking-special-default{
-  color: var(--gray-lightest);
 }
 
 /* Call to action background */
