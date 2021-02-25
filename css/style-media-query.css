@@ -30,6 +30,8 @@
 
 
 @media(max-width:1100px){
+
+  /* Header 1 styling*/
   h1{
     font-size: 2.75rem;
     line-height: 3.25rem;
@@ -52,7 +54,7 @@
   }
 
   /* Container for the second features section(locally sourced) - 
-  gray image on the right side of the section with curve at top left  */
+  gray image on the right side of the section*/
   .curve-top-left-pattern-container{ 
     margin-top: 20.5rem;
   }
@@ -110,7 +112,7 @@
 
 
 @media(max-width:950px){
-
+ /* Header 1 styling */
   h1{
     font-size: 2.75rem;
     line-height: 3.55rem;
@@ -122,12 +124,13 @@
     background-size: cover;
     height: 70vh;
   }
-
+  
+  /* Remove dark black color placed on the hero */
   .hero::after{
     display: none;
   }
 
-  /* Text container for the icon, header, and description in the hero */
+  /* Hero text container for the icon, header, and description */
   .hero-text-container{
     background-color: var(--black-darkest);
     width: 100%;
@@ -158,13 +161,13 @@
     text-align: center;
   }
 
-  /* Container for the features section(Gray shape on left side) */
+  /* Container for the first features section(Gray shape on left side) */
   .curve-top-right-pattern-container{
     height: 55vh;
     margin-top: 50rem;
   }
 
-  /* Gray pattern image with a curve at the top right  */
+  /* Gray pattern image in the first features section (Gray shape on the left side) */
   .curve-top-right-pattern{
     width: 52%;
   }
@@ -221,7 +224,7 @@
     width: 52%;
   }
 
-  /* Second features images (Locally sources section) moves it above the text */
+  /* Image in the second features section (Locally sources section) moves image above the text */
   .second-features-image{
     position: relative;
     bottom: 45rem;
@@ -234,7 +237,7 @@
     padding: 5rem 0;
   }
 
-  /* Flex container placing menu highlights on the top and menu items on the bottom */
+  /* Flex container placing menu highlights on top of menu items */
   .menu-container{
     display: flex;
     flex-direction: column;
@@ -250,7 +253,7 @@
     text-align: center;
   }
 
-  /* Brown Divider icon container above the highlights header */
+  /* Brown divider icon container above the highlights header */
   .menu-highlights-divider-icon-container{
     margin: 0 auto 3rem auto;
   }
