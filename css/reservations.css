@@ -34,10 +34,12 @@
   color: var(--white);
 }
 
+/* Hero logo container */
 .reservations-hero-logo-container{
   margin-bottom: 6.5rem;
 }
 
+/* Hero title container */
 .reservations-hero-title-container{
   margin-bottom: 1.5rem;
 }
@@ -112,10 +114,15 @@
   margin-bottom: 1.5rem;
 }
 
+/* Font size for all inputs */
+input{
+  font-size: 0.9rem;
+}
+
 input:focus{
   outline: none;
-
 }
+
 /* Name and email input fields */
 .name-input,
 .email-input{
@@ -124,7 +131,6 @@ input:focus{
   padding: 0 0 1rem 0.5rem;
   width: 100%;
   font-family: 'Spartan', sans-serif;
-  
 }
 
 /* Form date and time rows that place form label on left and inputs on the right */
@@ -133,8 +139,7 @@ input:focus{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  
+  width: 100%; 
 }
 
 /* Form labels for the date and time rows */
@@ -142,10 +147,9 @@ input:focus{
   width: 100%;
   font-size: 0.9rem;
   font-family: 'Spartan', sans-serif;
-  
 }
 
-/* Container for form rows with label to the left of input, want the error message below the label */
+/* Label and error message container on date and time, places error message below the label */
 .form-label-error-container{
   display: flex;
   flex-direction: column;
@@ -159,7 +163,6 @@ input:focus{
  justify-content: space-between;
  width: 60%;
  font-family: 'Spartan', sans-serif;
-  
 }
 
 /* Date input fields inside the date row and time row */
@@ -200,7 +203,7 @@ input:focus{
   border: none;
   color: var(--black-dark);
   font-family: 'Spartan', sans-serif;
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-weight: bold;
   text-align: center;
 }
@@ -230,4 +233,195 @@ input:focus{
   color: var(--error-red);
   padding: 0.625rem 0 0 0;
   font-size: 0.625rem;
+}
+
+
+@media(max-width:1058px){
+
+  /* Hero text container that holds the logo, title, and description text */
+  .reservations-hero-text-container{
+    position: absolute;
+    margin: 0;
+    top: 0;
+    padding-bottom: 15rem;
+    text-align: center;
+    color: var(--white);
+  }
+  
+  /* Hero logo container */
+  .reservations-hero-logo-container{
+    margin: 2rem 0 0 0;
+  }
+  
+  /* Hero title container */
+  .reservations-hero-title-container{
+    text-align: center;
+    margin: 2rem 0 1rem 0;
+  }
+
+  .reservations-hero-title{
+    font-size: 2.5rem;
+  }
+  
+  /* Hero description text below the title */
+  .reservations-hero-description{
+    font-size: 0.95rem;
+  }
+  
+  /* Hero description container for the text below the title */
+  .reservations-hero-description-container{
+    text-align: center;
+    margin: 0 auto;
+    width: 55%;
+  }
+
+  /* Removes gray pattern image behind the form */
+  .reservation-pattern{
+    display: none;
+  }
+
+  /* initially positions container for the form right below the hero */
+  .reservation-icon-form-container{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  /* Removes brown lines icon on the gray shape */
+  .reservation-icon-container{
+    display: none;
+  }
+
+  /* Pushes the form on top of the hero, decreases the width, and centers the form */
+  .reservation-form-container{
+    width: 60%;
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 10rem;
+    margin: 0 auto;
+  }
+
+  /* Reservation form */
+  .reservation-form{
+    margin: 0 auto;
+    width: 100%;
+  }
+
+}
+
+@media(max-width:800px){
+  /* Hero description container for the text below the title */
+  .reservations-hero-description-container{
+    text-align: center;
+    margin: 0 auto;
+    width: 75%;
+  }
+
+  /* Increase the width of the form container */
+  .reservation-form-container{
+    width: 75%;
+  }
+
+}
+
+@media(max-width:415px){
+  /* Hero container */
+  .reservations-hero{
+    height: 46vh;
+    width: 100vw;
+    position: relative;
+  }
+  
+  /* Hero logo container */
+  .reservations-hero-logo-container{
+    margin: 1.5rem 0 0 0;
+  }
+  
+  /* Hero title container */
+  .reservations-hero-title-container{
+    text-align: center;
+    margin: 1rem 0 0.5rem 0;
+  }
+
+  .reservations-hero-title{
+    font-size: 1.75rem;
+  }
+  
+  /* Hero description text under the title */
+  .reservations-hero-description{
+    font-size: 0.85rem;
+    line-height: 1.6rem;
+  }
+
+  /* Hero description container for the text below the title */
+  .reservations-hero-description-container{
+    width: 90%;
+  }
+
+  /* Increase the width of the form container */
+  .reservation-form-container{
+    width: 90%;
+    bottom: 1.5rem;
+  }
+
+  /* Form date and time rows that now place form label on top of inputs */
+  .form-date-row,
+  .form-time-row{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Container for the 3 inputs for date and time - increase width */
+  .form-date-input-container,
+  .form-time-input-container{
+    width: 100%;
+  }
+
+  /* Container for labels and error message, want the error message to the right */
+  .form-label-error-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  /* Form labels for the date and time rows */
+  .form-label{
+    width: 40%;
+    padding-bottom: 0.75rem;
+  }
+  
+  /* Error message for date and time */
+  .form-label-error-container .error-message{
+    padding-top: 0.2rem;
+  }
+
+
+}
+
+@media(max-width:320px){
+  /* Hero logo container */
+  .reservations-hero-logo-container{
+    margin-bottom: 0;
+  }
+  
+  /* Hero title container */
+  .reservations-hero-title-container{
+    margin: 0.5rem 0 0 0;
+  }
+
+  .reservations-hero-title{
+    font-size: 1.5rem;
+  }
+  
+  /* Hero description text below the title */
+  .reservations-hero-description{
+    font-size: 0.65rem;
+    line-height: 1.2rem;
+  }
+  
+  
+
 }
