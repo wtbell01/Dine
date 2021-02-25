@@ -159,6 +159,8 @@ li{
 
 .hero-button-container{
   margin-top: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
 }
 
 /* Container for the features section - sets properties for the gray image on the left side of the section  */
@@ -334,7 +336,6 @@ li{
 .menu-item-image{
   height: 100%;
   width: 100%;
-  
 }
 
 .menu-item-description{
