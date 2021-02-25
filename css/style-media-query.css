@@ -23,12 +23,10 @@
   }
   
   .call-to-action-button{
-    font-size: 0.7rem;
+    font-size: 0.65rem;
+    padding: 1rem 2.5rem;
   }
 }
-
-
-
 
 
 @media(max-width:1100px){
@@ -138,7 +136,7 @@
     right: 0;
     left: 0;
     text-align: center; 
-    padding-bottom: 13rem; 
+    padding: 2rem 0 13rem 0; 
   }
 
   /* Header in the hero */
@@ -356,7 +354,6 @@
   .call-to-action-text{
     font-size: 1.75rem;
   }
-
 }
 
 
@@ -427,10 +424,210 @@
 
 
 @media(max-width:414px){
+
+  /* Header 2 styling */
+  h2{
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+  }
+  
+  /* Regular sized paragraph elements */
+  .normal-p{
+    font-size: 0.93rem;
+    line-height: 1.56rem;
+  }
   /* Hero */
   .hero{
-    background: url('/images/homepage/hero-bg-mobile.jpg') no-repeat right top/cover;
-    height: 57vh;
+    background: url('/images/homepage/hero-bg-mobile.jpg') no-repeat top top/cover;
+    height: 25vh;
+  }
+
+
+  /* Text container for the icon, header, and description in the hero */
+  .hero-text-container{
+    top: 11.5rem;
+    padding-bottom: 7rem; 
+  }
+
+  .hero-logo-container{
+    margin-bottom: 1rem;
+  }
+
+  /* Header in the hero */
+  .hero-header{
+    margin: 0 auto 1rem auto;
+    width: 80%;
+    font-size: 1.9rem;
+    line-height: 2.7rem;
+  }
+
+  /* Paragraph elememt in the hero */
+  .hero-p{
+    font-size: 0.85rem;
+    width: 75%;
+  }
+
+  .hero-button-container{
+    margin: 2.5rem auto;
+    font-size: 0.56rem;
+  }
+
+  /* Display all Gray pattern images on the page*/
+  .curve-top-right-pattern, .curve-top-left-pattern,
+  .curve-bottom-right-pattern{
+    display: block;
+  }
+
+  /* Container for the first features section (enjoyable places) */
+  .curve-top-right-pattern-container{
+    height: 20vh;
+    margin-top: 39rem;
+  }
+
+  /* Features image container for both images in features sections */
+  .features-image-container{
+    bottom: 12rem;
+    height: 42vh;
+  }
+
+   /* Features image */
+   .features-image{
+    height: 100%;
+    width: 100%;
+  }
+
+  /* Features text container that holds an icon, header, and paragraph element */
+  .features-text-container{
+    bottom: 10rem;
+  }
+
+   /* Second features section (Locally sourced) - margin top adds space between gray shape and the start of this section */
+   .curve-top-left-pattern-container{
+    margin-top: 52rem;
+    height: 20vh;
+  }
+
+
+  /* Second features image (Locally sources section) moves it above the text */
+  .second-features-image{
+    bottom: 34.5rem;
+  }
+
+  /* Flex container placing menu highlights on the top and menu items on the bottom */
+  .menu-container{
+    width: 90%;
+  }
+
+  /* Brown Divider icon container above the highlights header */
+  .menu-highlights-divider-icon-container{
+    margin: 0 auto 3rem auto;
+    height: 5%;
+    width: 20%;
+  }
+
+  /* Header container for the highlights */
+  .menu-highlights-header-container{
+    width: 90%;
+    margin: 0 auto 1rem auto;
+  }
+
+  /* Menu items container  */
+  .menu-items-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 3.75rem;
+  }
+
+  .menu-item-row{
+    width: 100%;
+  }
+
+  .menu-item-image-container{
+    height: 23vh;
+    width: 55%;
+  }
+
+  .menu-item-description{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /* Flex container for the feature image and feature text */
+  .booking-image-text-container{
+    width: 90%;
+  }
+
+  /* Booking image container on the left side of the booking section */
+  .booking-image-container{
+    height: 50%;
+    width: 100%; 
+  }
+
+  /* Booking text container that holds all content below booking image */
+  .booking-text-container{
+    top: 8rem;
+  }
+
+  /* Booking header container - margin top puts space between header and booking links above */
+  .booking-header-container{
+    margin: 8rem 0 2rem 0;
+  }
+
+  .booking-occasion-links-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Booking button container */
+  .booking-button-container{
+    margin-bottom: 0rem;
+  }
+
+  /* Call to action background */
+  .call-to-action{
+    margin-top: 22rem;
+  }
+
+  /* Flex container for call to action  */
+  .call-to-action-flex-container{
+    width: 60%;
+    text-align: center;
+  }
+
+  /* Call to action text above the call to action button*/
+  .call-to-action-text{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+  }
+
+}
+
+
+@media(max-width:375px){
+  /* Text container for the icon, header, and description in the hero */
+  .hero-text-container{
+    top: 10.35rem;
+  }
+
+}
+
+@media(max-width:320px){
+  /* Text container for the icon, header, and description in the hero */
+  .hero-text-container{
+    top: 8.75rem;
+  }
+
+  /* Remove all Gray pattern images on the page*/
+  .curve-top-right-pattern, .curve-top-left-pattern,
+  .curve-bottom-right-pattern{
+    display: none;
+  }
+
+   /* Second features section (Locally sourced) add white space below the container */
+   .curve-top-left-pattern-container{
+    padding-bottom: 13rem;
   }
 
 }
