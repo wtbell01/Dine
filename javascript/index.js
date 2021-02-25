@@ -18,7 +18,6 @@ document.querySelector('.booking-special-link').addEventListener('click', displa
 
 
 
-
 /* Function that retrievs the social json file and loops through the object and displays it to the booking output */
 function displayFamily(e){
   // Fetch the file where the info is located
@@ -42,6 +41,7 @@ function displayFamily(e){
 }
 
 
+
 /* Function that retrievs the social json file and loops through the object and displays values to the booking output */
 function displaySocial(e){
   // Fetch the file where the info is located
@@ -63,7 +63,6 @@ function displaySocial(e){
   })
   e.preventDefault();
 }
-
 
 
 
