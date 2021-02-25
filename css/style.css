@@ -427,13 +427,23 @@ li{
   color: var(--gray-lightest);
 }
 
-/* Set dark color for the default booking link */
+/* Set dark color for the active booking link */
+.booking-occasion-link:focus{
+  color: var(--gray-medium);
+}
+
+/* Set dark color on the booking link that is initially shown on page load */
 .booking-default{
   color: var(--gray-medium);
 }
 
-/* Set dark color for the active booking link */
-.booking-occasion-link:focus{
+/* Remove dark color the default link after another book link is selected and make it light */
+.booking-default:visited{
+  color: var(--gray-lightest);
+}
+
+/* Add dark color to the default link when the link is selected */
+.booking-default:focus{
   color: var(--gray-medium);
 }
 
