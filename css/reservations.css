@@ -236,6 +236,7 @@ input:focus{
 }
 
 
+/* Media queries */
 @media(max-width:1058px){
 
   /* Hero text container that holds the logo, title, and description text */
