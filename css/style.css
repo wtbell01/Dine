@@ -117,6 +117,7 @@ li{
   position: relative;
 }
 
+/* Dark black color to the left of the hero */
 .hero::after{
   content: "";
   display: block;
@@ -133,7 +134,7 @@ li{
   margin-bottom: 7.5rem;
 }
 
-/* Text container for the icon, header, and description in the hero */
+/* Hero text container for the icon, header, and description */
 .hero-text-container{
   width: 100%;
   position: absolute;
@@ -144,14 +145,14 @@ li{
 }
 
 
-/* Header 1 in the hero */
+/* Header 1 element in the hero */
 .hero-header{
   color: var(--white);
   margin-bottom: 1.5rem;
   width: 40%;
 }
 
-/* Paragraph elememt in the hero */
+/* Paragraph element in the hero */
 .hero-p{
   color: var(--white);
   width: 30%;
@@ -163,7 +164,7 @@ li{
   letter-spacing: 0.125rem;
 }
 
-/* Container for the features section - sets properties for the gray image on the left side of the section  */
+/* Container for the first features section - sets properties for the gray image on the left side of the section  */
 .curve-top-right-pattern-container{
   background-color: var(--white);
   height: 46vh;
@@ -172,7 +173,7 @@ li{
   margin-top: 12rem;
 }
 
-/* Gray pattern image with a curve at the top right - starts on the left side of the features section */
+/* Gray pattern image in the first features section - starts on the left side of the features section */
 .curve-top-right-pattern{
   height: 100%;
   width: 62.5%;
@@ -238,7 +239,7 @@ li{
   justify-content: flex-end;
 }
 
-/* Gray pattern image with a curve at the top right - starts on the left side of the features section */
+/* Gray pattern image in the second features section - starts on the right side of the features section */
 .curve-top-left-pattern{
   height: 100%;
   width: 62.5%;
@@ -260,14 +261,14 @@ li{
   margin: 0 auto;
 }
 
-/*Menu highlights container on the left side */
+/* Menu highlights container on the left side */
 .menu-highlights-container{
   display: flex;
   flex-direction: column;
   width: 42.5%;
 }
 
-/* Divider icon container above the highlights header */
+/* Menu divider icon container above the highlights header */
 .menu-highlights-divider-icon-container{
   height: 2%;
   width: 12%;
@@ -275,13 +276,13 @@ li{
   margin-bottom: 3rem;
 }
 
-/* Divider icon */
+/* Menu Divider icon */
 .menu-highlights-divider-icon{
   height: 100%;
   width: 100%;
 }
 
-/* Header container for the highlights */
+/* Menu header container for the highlights */
 .menu-highlights-header-container{
   color: var(--white);
   margin-bottom: 1rem;
@@ -349,7 +350,7 @@ li{
   position: relative;
 }
 
-/* Gray pattern image with a curve at the bottom right - starts on the left side of the booking section */
+/* Gray pattern image in the booking section - starts on the left side of the section */
 .curve-bottom-right-pattern{
   height: 100%;
   width: 36%;
@@ -412,23 +413,26 @@ li{
  letter-spacing: 0.125rem;
 }
 
-/* Booking list items for booking occasions below booking button */
+/* Booking list items for occasions below booking button */
 .booking-occasion-li{
   letter-spacing: 0.125rem;
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
 
+/* Booking links for occasions below the booking button */
 .booking-occasion-link{
   font-weight: bold;
   font-size: 0.8rem;
   color: var(--gray-lightest);
 }
 
+/* Set dark color for the default booking link */
 .booking-default{
   color: var(--gray-medium);
 }
 
+/* Set dark color for the active booking link */
 .booking-occasion-link:focus{
   color: var(--gray-medium);
 }
@@ -441,6 +445,7 @@ li{
   background: url('/images/homepage/ready-bg-desktop.jpg') no-repeat top left/cover;
 }
 
+/* Call to action container that places text to the left of the button */
 .call-to-action-flex-container{
   display: flex;
   justify-content: space-between;
@@ -477,12 +482,14 @@ li{
   margin: 0 auto;
 }
 
+/* Individual footer columns */
 .footer-box{
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
+/* List items for location and opening times */
 .footer-location-li,
 .footer-times-li{
   font-size: 0.8rem;
