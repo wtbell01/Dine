@@ -425,10 +425,10 @@
 
 }
 
-@media(max-width:550px){
+@media(max-width:600px){
   /* Text container for the icon, header, and description in the hero */
   .hero-text-container{
-    top: 8.5rem;
+    top: 15.5rem;
     
   }
 
@@ -451,13 +451,13 @@
   /* Hero */
   .hero{
     background: url('/images/homepage/hero-bg-mobile.jpg') no-repeat top top/cover;
-    height: 25vh;
+    /*height: 25vh; */
   }
 
 
   /* Text container for the icon, header, and description in the hero */
   .hero-text-container{
-    top: 10.5rem;
+    top: 12.5rem;
     padding-bottom: 7rem; 
   }
 
