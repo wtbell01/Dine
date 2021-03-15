@@ -425,7 +425,7 @@
 
 }
 
-@media(max-width:500px){
+@media(max-width:550px){
   /* Text container for the icon, header, and description in the hero */
   .hero-text-container{
     top: 8.5rem;
